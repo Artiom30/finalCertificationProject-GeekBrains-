@@ -872,7 +872,7 @@ main {
 	background-color: #C6C6D2;
 	position: absolute;
 	top: -16px;
-	left: -60px;
+	left: -67px;
 }
 
 .sign-up__star-rating__link {
@@ -991,12 +991,11 @@ footer {
 	.center {
 		max-width: 335px;
 		width: 100%;
-		outline: 1px solid green;
+		/* outline: 1px solid green; */
 	}
 
 	.top-wrp {
 		width: 100%;
-		/* min-height: 815px; */
 		margin: 0 auto;
 		background-image: url(../img/background-top.png);
 		background-repeat: no-repeat;
@@ -1081,7 +1080,7 @@ footer {
 	/* ==ENDtop-page__promo== */
 
 	main {
-		padding: 50px 0;
+		padding: 50px 0 29px;
 	}
 
 	/* ==section-features== */
@@ -1204,6 +1203,44 @@ footer {
 	}
 
 	/* ==ENDsection-product-functions== */
+
+	/* ==section-pricing-plans== */
+
+
+
+
+
+
+
+
+
+	/* ==ENDsection-pricing-plans== */
+
+	/* ==section-read-more== */
+	.company {
+		display: none;
+	}
+
+	.read-more-inner {
+		margin: 34px auto 20px;
+	}
+
+	.sign-up {
+		margin: 0 auto 32px;
+		max-width: 375px;
+	}
+
+	.sign-up__button,
+	.sign-up__email-input,
+	.sign-up__pass-input {
+		width: 335px;
+	}
+
+	/* ==ENDsection-read-more== */
+
+
+
+
 
 }
 
