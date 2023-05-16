@@ -276,7 +276,7 @@ a:active {
 
 .header-page-menu-btn:checked~.header-page-menu-box {
 	visibility: visible;
-	top: 80px;
+	top: 71px;
 	transition: top 1.5s ease;
 }
 
@@ -861,7 +861,6 @@ main {
 	gap: 5px;
 }
 
-
 .sign-up__star-rating__txt {
 	margin-top: 16px;
 	position: relative;
@@ -1272,6 +1271,11 @@ footer {
 		padding: 0;
 		margin: 0;
 		gap: 20px;
+		/* justify-content: center; */
+	}
+
+	.middle-item {
+		/* flex: 0; */
 	}
 
 	.pricing-plans__wrp {
