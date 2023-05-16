@@ -3,6 +3,22 @@
 	padding: 0;
 }
 
+ol {
+	margin: 0;
+	padding: 0;
+}
+
+ul {
+	padding: 0;
+	margin: 0;
+
+}
+
+p {
+	margin: 0;
+	padding: 0;
+}
+
 body {
 	font-family: 'Roboto', sans-serif;
 	font-style: normal;
@@ -579,6 +595,10 @@ main {
 }
 
 .pricing-plans__wrp:hover {
+	box-shadow: 0px 18px 50px -15px #060F28;
+}
+
+.pricing-plans__wrp:hover {
 	background-color: #FFFFFF;
 }
 
@@ -755,7 +775,6 @@ main {
 /* ===sign-up=== */
 
 .sign-up {
-
 	margin: 32px auto;
 	max-width: 428px;
 	width: 100%;
@@ -763,9 +782,6 @@ main {
 	box-shadow: 4px 4px 12px rgba(137, 137, 162, 0.322), 0px 53px 0px 26px rgba(249, 240, 255, 1);
 	;
 	border-radius: 8px;
-	/* box-shadow: 0px 53px 0px 26px rgba(249, 240, 255, 1); */
-	/* -webkit-box-shadow: 0px 53px 0px 26px rgba(249, 240, 255, 1);
-	-moz-box-shadow: 0px 53px 0px 26px rgba(249, 240, 255, 1); */
 }
 
 .sign-up__title {
@@ -969,7 +985,6 @@ footer {
 	fill: #EF2A82;
 }
 
-
 /* ==ENDFootter== */
 
 @media(max-width:1036px) {
@@ -978,16 +993,17 @@ footer {
 	}
 }
 
-@media(max-width:767px) {
+@media(max-width:975px) {
 
 	.center {
 		max-width: 335px;
 		width: 100%;
-		outline: 1px solid green;
+		/* outline: 1px solid green; */
 	}
 
 	.top-wrp {
 		width: 100%;
+		min-height: 781px;
 		margin: 0 auto;
 		background-image: url(../img/background-top.png);
 		background-repeat: no-repeat;
@@ -1016,9 +1032,9 @@ footer {
 		display: flex;
 		justify-content: flex-start;
 		align-items: center;
-		gap: 64px;
+		gap: 104px;
 		margin: 0 auto 29px;
-		padding: 20px;
+		padding: 0px;
 		position: relative;
 	}
 
@@ -1070,14 +1086,11 @@ footer {
 	}
 
 	/* ==ENDtop-page__promo== */
-
 	main {
-		padding: 50px 0 29px;
+		padding: 0px 0 29px;
 	}
 
 	/* ==section-features== */
-
-
 	.features {
 		margin: 0 0 71px 0;
 	}
@@ -1107,6 +1120,7 @@ footer {
 		margin: 0 auto;
 		flex-direction: column;
 		padding: 0;
+		gap: 35px
 	}
 
 	.features__list-item {
@@ -1151,7 +1165,7 @@ footer {
 	/* ==ENDsection-features== */
 	/* ==section-product-functions== */
 	.product-functions {
-		margin: 0 0 73px 0;
+		margin: 0 0 0 0;
 	}
 
 	.product-functions__image {
@@ -1197,14 +1211,123 @@ footer {
 	/* ==ENDsection-product-functions== */
 
 	/* ==section-pricing-plans== */
+	.pricing-plans-wrp {
+		min-height: 930px;
+		background-image: url(../img/background-image1-section-pricing-plans1.svg);
+		background-repeat: no-repeat;
+		background-size: cover;
+		background-position: 0px 0px;
+		padding: 205px 0px 0px;
+	}
 
+	.pricing-plans__heading {
+		margin: 0 auto 35px;
+		display: flex;
+		flex-direction: column;
+		align-items: flex-start;
+	}
 
+	.pricing-plans__header-title {
+		margin-bottom: 20px;
+		font-size: 30px;
+		line-height: 35px;
+		text-align: start;
+	}
 
+	.pricing-plans__header-txt {
+		margin: 0;
+		font-size: 14px;
+		line-height: 20px;
+		text-align: start;
+		position: relative;
+		gap: 20px;
+	}
 
+	.pricing-plans__header-txt::before {
+		content: "";
+		display: block;
+		width: 335px;
+		height: 1px;
+		background-color: #2A407C;
+		position: absolute;
+		bottom: -468px;
+	}
 
+	.pricing-plans__list-wrp {
+		padding: 17px 0 0 0;
+		max-width: 375px;
+		width: 100%;
+		min-height: 428px;
+		overflow: hidden;
+		overflow-x: scroll;
 
+	}
 
+	.pricing-plans__list-wrp::-webkit-scrollbar {
+		width: 0;
+		scroll-behavior: smooth;
+	}
 
+	.pricing-plans__list {
+		padding: 0;
+		margin: 0;
+		gap: 20px;
+	}
+
+	.pricing-plans__wrp {
+		width: 280px;
+		min-height: 358px;
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		background: #FFFFFF;
+		box-shadow: 0px 18px 50px -15px #060F28;
+		border-radius: 30px;
+		padding: 30px 0 45px;
+		box-sizing: border-box;
+	}
+
+	.pricing-plans__name {
+		font-size: 25px;
+		line-height: 29px;
+		margin-bottom: 7px;
+	}
+
+	.pricing-plans__desc {
+		font-size: 13px;
+		line-height: 18px;
+		min-height: 56px;
+		margin-bottom: 21px;
+	}
+
+	.pricing-plans__deck-price-txt {
+		font-size: 13px;
+		line-height: 18px;
+	}
+
+	.pricing-plans__price {
+		margin: 0;
+	}
+
+	.pricing-plans__deck-price-txt {
+		margin-bottom: 36px;
+	}
+
+	.pricing-plans__wrp .pricing-plans__price,
+	.pricing-plans__wrp .pricing-plans__name {
+		color: #0F1F4B;
+	}
+
+	.pricing-plans__wrp .pricing-plans__btn {
+		background-color: #EF2A82;
+		border: none;
+	}
+
+	.pricing-plans__btn:hover {
+		background-color: #FFFFFF;
+		border: 1px solid #EF2A82;
+		color: #EF2A82;
+	}
 
 	/* ==ENDsection-pricing-plans== */
 
